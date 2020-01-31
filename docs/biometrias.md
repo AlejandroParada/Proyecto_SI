@@ -1,9 +1,7 @@
 
-# Sistemas físicos y biométricos de seguridad	PDF	Imprimeix	Correu electrònic
+# Sistemas físicos y biométricos de seguridad
 
-Continuamos ampliando y profundizando en los diferentes ámbitos que engloba la seguridad informática. En este artículo hablaremos, dentro de la seguridad física, de la Biometría.
-
-Al hablar de seguridad física nos referimos a los procedimientos existentes para controlar el acceso físico al equipamiento informático. Consiste en la aplicación de barreras físicas y procedimientos de control que engloban la protección del hardware (del acceso físico y de desastres naturales o climatológicos) y la protección de los datos. Como ejemplo podemos nombrar las cámaras de vídeo en la sala del CPD (Centro de Proceso de Datos).
+Al hablar de seguridad física nos referimos a los procedimientos existentes para controlar el acceso físico al equipamiento informático. Consiste en la aplicación de barreras físicas y procedimientos de control que engloban la protección del hardware (del acceso físico y de desastres naturales o climatológicos) y la protección de los datos. Como ejemplo podemos nombrar las cámaras de vídeo en la sala del CPD (Data Center).
 
 Y dentro del apartado del control del acceso a los sistemas de información, tenemos la Biometría como conjunto de mecanismos que nos garantizan, en mayor o menor medida, dicho control de acceso.
 
