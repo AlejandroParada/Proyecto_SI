@@ -199,7 +199,7 @@ La tabla CAM de un conmutador contiene información de red, como las direcciones
 
 1. Ataques de redireccionamiento ICMP:
 * Los mensajes de redirección de ICMP se utilizan para redirigir un host de origen para usar una puerta de enlace diferente que pueda estar más cerca del destino. Estos mensajes de redirección son enviados por la puerta de enlace de recepción y el host de origen debe adaptar su reenvío en consecuencia cuando recibe este mensaje. Los redireccionamientos ICMP se utilizan con mayor frecuencia en entornos de enrutamiento de origen donde el host de origen calcula rutas de enrutamiento a todos los destinos. Los redireccionamientos ICMP también se pueden usar para amplificar ataques SMURF o FRAGGLE o para configurar ataques Man-in-the-Middle.
-1. Ataque de transferencia de zona DNS:
+2. Ataque de transferencia de zona DNS:
 Una solicitud de transferencia de zona a un servidor DNS devuelve una lista completa de nombres de host y direcciones IP en el dominio. Por lo general, las transferencias de zona solo deben realizarse entre servidores DNS autoritativos para un dominio. Los atacantes pueden consultar servidores DNS para compilar una lista de posibles hosts para atacar. Esta firma detecta transferencias de zona intentadas desde fuentes distintas a los servidores DNS.
 ### ¿Cómo prevenir los ataques CAM Overflow?
 Para prevenir este tipo de ataque, cambiaremos el puerto a un puerto de acceso emitiendo acceso en modo de puerto de conmutación. Luego asignaremos la cantidad máxima de direcciones MAC en las que se almacenará la tabla CAM para esta interfaz.
@@ -209,23 +209,23 @@ Finalmente elegiremos nuestra acción de violación que se aplicará cuando el u
 ## 18. Ataques a Aplicaciones Web
 1. Inyección SQL:
 * También se denomina Ataque de Inserción SQL que ayuda al hacker a ejecutar un código debido a la presencia de vulnerabilidad en la capa de la base de datos de la Aplicación. En consecuencia, el código obtendrá datos confidenciales o incluso comprometerá la aplicación en sí.
-1. Cross-Site Request:
+2. Cross-Site Request:
 * La falsificación de solicitudes entre sitios, también conocida como ataque con un solo clic o sesión y abreviado como CSRF ("sea-surf") o XSRF, es un tipo de exploit malicioso de un sitio web mediante el cual se transmiten comandos no autorizados de un usuario en el que el sitio web confía. A diferencia de los scripts de sitios cruzados (XSS), que explota la confianza que un usuario tiene para de un sitio en particular, CSRF explota la confianza que un sitio tiene en el navegador de un usuario.
-1. Ataque de envenenamiento de cookies:
+3. Ataque de envenenamiento de cookies:
 * Los ataques de envenenamiento de cookies implican la modificación de los contenidos de una cookie (información personal almacenada en la computadora de un usuario web) para eludir los mecanismos de seguridad. Al usar ataques de envenenamiento de cookies, los atacantes pueden obtener información no autorizada sobre otro usuario y robar su identidad.
-1. Robo de cookies:
+4. Robo de cookies:
 * Este tipo de ataques se realizan mediante scripts del lado del cliente como JavaScript. Cuando el usuario hace clic en un enlace, el script buscará la cookie almacenada en la memoria de la computadora para todas las cookies activas y las enviará (al parecer, los correos electrónicos) al atacante.
-1. Ataques de phishing:
+5. Ataques de phishing:
 * Phishing es el proceso criminalmente fraudulento de intentar adquirir información sensible como nombres de usuario, contraseñas y detalles de tarjetas de crédito haciéndose pasar por una entidad confiable en una comunicación electrónica.
-1. Web Defacement:
+6. Web Defacement:
 * La desfiguración del sitio web es un ataque a un sitio web que cambia la apariencia visual del sitio. Estos son típicamente el trabajo de los crackers del sistema, que entran en un servidor web y reemplazan el sitio web alojado con uno propio. Lo más probable es que este tipo de ataques se hagan intencionalmente para arruinar la reputación de la compañía que ha alojado este sitio web.
 1. Buffer Overflow:
 * El desbordamiento de búfer, o el desbordamiento del búfer, es una anomalía en la que un proceso almacena datos en un búfer fuera de la memoria que el programador reservó para ello. Los datos adicionales sobrescriben la memoria adyacente, que puede contener otros datos, incluidas variables de programa y datos de control de flujo del programa. Esto puede provocar errores de acceso a la memoria, resultados incorrectos, finalización del programa o una violación de la seguridad del sistema. Esta vulnerabilidad es completamente un error del Programador.
-1. Navegación forzada:
+5. Navegación forzada:
 * La exploración forzada es un ataque cuyo objetivo es enumerar y acceder a los recursos a los que la aplicación no hace referencia, pero que aún son accesibles. Por ejemplo, directorios como config, backup, logs a los que se puede acceder pueden revelar mucha información sobre la aplicación en sí, contraseña, actividades, etc.
-1. División de respuesta HTTP:
+6. División de respuesta HTTP:
 * Un atacante pasa datos maliciosos a una aplicación vulnerable, y la aplicación incluye los datos en un encabezado de respuesta HTTP. Este ataque en sí no causa ningún daño, pero daría lugar a otros ataques sensibles como XSS.
-1. Defectos de inyección:
+7. Defectos de inyección:
 * Las fallas de inyección permiten a los atacantes retransmitir código malicioso a través de una aplicación web a otro sistema. Estos ataques incluyen llamadas al sistema operativo a través de llamadas al sistema, el uso de programas externos a través de comandos del shell, así como llamadas a bases de datos de backend a través de SQL (es decir, inyección de SQL). Los scripts completos escritos en Perl, Python y otros lenguajes pueden ser inyectados en aplicaciones web mal diseñadas y ejecutado. Cada vez que una aplicación web utiliza un intérprete de cualquier tipo, existe el peligro de un ataque de inyección. Cada vez que una aplicación web utiliza un intérprete de cualquier tipo, existe el peligro de un ataque de inyección.
 ### ¿Cómo prevenir los ataques a apliciones web?
 Existen diferentes métodos y herramientas que los desarrolladores modernos de aplicaciones web usan para proteger un sitio web. Existen soluciones para ataques específicos y mejores prácticas que se pueden utilizar de forma continua para proteger las aplicaciones y los usuarios. Las revisiones de código, los programas de recompensa de errores y los escáneres de código deberían implementarse durante todo el ciclo de vida de la aplicación. Las revisiones de códigos pueden ayudar a detectar códigos vulnerables al principio de la fase de desarrollo, los escáneres de códigos dinámicos y estáticos pueden hacer comprobaciones automáticas de vulnerabilidades, y los programas de bonificación de errores permite a los tester/hacker profesionales encontrar errores en el sitio web.
@@ -249,23 +249,23 @@ Malware es una forma corta de software malicioso. El malware no es lo mismo que 
 ### ¿Como prevenir el Malware?
 1. Instalar software Anti-Virus / Malware.
 * Este consejo puede ser evidente. Sin embargo, he visto muchos PCs, especialmente PCs pesonales, que no tienen protección antivirus / malware. Esta protección es un primer paso imprescindible para mantenernos libres de virus.
-1. Mantener el software antivirus actualizado.
+2. Mantener el software antivirus actualizado.
 * Tener software de protección es el primer paso; mantenerlo es el segundo. El software antivirus gratuito es mejor que nada, pero tenga en cuenta que no es la mejor solución. Microsoft proporciona un paquete de seguridad "gratis". Es gratis si tiene Windows en su máquina, se le concede acceso. Muchos usuarios no conocen este programa, pero en realidad es una protección decente.
-1. Ejecuta escaneos regulares programados del antivirus.
+3. Ejecuta escaneos regulares programados del antivirus.
 * Esto también puede parecer obvio, pero muchos de nosotros nos olvidamos de hacer esto. Configurar el software de elección para que se ejecute a intervalos regulares. Es prefible una vez por semana, pero no debemos esperra mucho más entre escaneos. Es difícil trabajar en su computadora mientras se está ejecutando el software antivirus. Una solución es ejecutar el software por la noche cuando no se está usando el PC. Sin embargo, a menudo apagamos nuestras computadoras por la noche, por lo que el escaneo nunca se ejecuta. Configurar el software antivirus para que se ejecute en una noche específica, y siempre dejar wl PC encendido ese día. Asegurarnos de que no se apague automáticamente o entre en modo de hibernación.
-1. Mantener el sistema operativo al día.
+4. Mantener el sistema operativo al día.
 * Ya sea que esté ejecutando Windows, Mac OS X, Linux o cualquier otro sistema operativo, mantenerlo actualizado. Los desarrolladores de SO siempre emiten parches de seguridad que arreglan y completan las filtraciones de seguridad. Estos parches ayudarán a mantener un sistema seguro. Del mismo modo, mantener un software antivirus actualizado. Los virus y el malware se crean de forma contínua. Si nuestro software de escaneo es tan bueno como nuestra base de datos. También debe ser lo más actualizado posible.
-1. Asegurar la red.
+5. Asegurar la red.
 * Muchas de nuestras computadoras se conectan a nuestros archivos, impresoras o Internet a través de una conexión Wi-Fi. Debemos asegurarnos de que se requiere una contraseña para acceder y que la contraseña es fuerte. Nunca debemos transmitir por una conexión Wi-Fi abierta. Usaremos cifrado WPA o WPA2. Ya que el WEP no es lo suficientemente fuerte ya que los expertos lo pueden romper en minutos. También es una buena idea no difundir su SSID (el nombre de su red Wi-Fi) e importante tambien, proporcionar un SSID de invitados que use una contraseña diferente.
-1. Piensa antes de hacer clic.
+6. Piensa antes de hacer clic.
 * Evitar los sitios web que proporcionan material pirateado. No abrir un archivo adjunto de correo electrónico de alguien o una empresa que no conocemos. No hacer clic en un enlace en un correo electrónico no solicitado. Siempre colocar el cursor sobre un enlace (especialmente uno con un acortador de URL) antes de hacer clic para ver hacia dónde nos lleva realmente el enlace. Si tenemos que descargar un archivo de Internet, un correo electrónico, un sitio FTP, un servicio de intercambio de archivos, etc., buscarlo antes de ejecutarlo. Un buen software antivirus lo hará de forma automática, pero debemos asegurarnos de que se está haciendo.
-1. Mantener la información personal segura.
+7. Mantener la información personal segura.
 * Esto es probablemente lo más difícil de hacer en Internet. Muchos hackers accederán a nuestros archivos no mediante la fuerza bruta, sino a través de la ingeniería social. Recibirán suficiente información para acceder a nuestras cuentas en línea y obtendrán más de nuestros datos personales. Continuarán de una cuenta a otra hasta que tengan suficiente información que les permita acceder a nuestros datos bancarios o simplemente robar nuestra identidad. Debemos tener cuidado con los tableros de mensajes y las redes sociales. Bloquear todas nuestras configuraciones de privacidad y evitar usar nuestro nombre real o identidad en los foros de debate.
-1. No usar Wi-Fi abierto.
+8. No usar Wi-Fi abierto.
 * Cuando nos encontremos en la cafetería local, la biblioteca y especialmente el aeropuerto, no debemos usar el Wi-Fi abierto (sin contraseña ni cifrado) "gratuito". Pensémolo. Si puede acceder sin problemas, ¿qué puede hacer un individuo malicioso entrenado?
-1. Haz una copia de seguridad de los archivos.
+9. Haz una copia de seguridad de los archivos.
 * Lo mejor que puede hacer es hacer una copia de seguridad de los archivos, todos ellos. Idealmente, tendremos nuetsros archivos (sus datos) en al menos tres lugares: en el lugar donde trabaja en ellos, en un dispositivo de almacenamiento por separado y otro fuera del sitio de trabajo. Debemos mantener nuestros archivos en el PC, hacer una copia de seguridad de ellos en un disco duro externo y luego hacer una copia de respaldo en una ubicación diferente.
-1. Usa múltiples contraseñas fuertes.
+10. Usa múltiples contraseñas fuertes.
 * Nunca use la misma contraseña. Por lo general, utilizamos la misma dirección de correo electrónico o nombre de usuario para todas nuestras cuentas. Si se usa la misma contraseña para todo, o en muchas cosas, y la misma se "rompe", solo demorará unos segundos a un hackear para entrar en la cuenta. Usa minúsculas, mayúsculas, números y símbolos en la contraseña. Haz una contraseña fácil de recordar pero difícil de adivinar.
 ## 22. Adware
 Adware, o software respaldado por publicidad, es cualquier paquete de software que reproduce, muestra o descarga publicidades en una computadora automáticamente después de instalar el software o mientras se usa la aplicación. Las funciones de publicidad se integran o se incluyen con el software, que a menudo está diseñado para indicar qué sitios de Internet visita el usuario y para presentar la publicidad pertinente a los tipos de productos o servicios que allí aparecen.
