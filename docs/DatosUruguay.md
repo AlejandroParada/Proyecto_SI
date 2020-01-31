@@ -6,4 +6,4 @@
 
 [Pishing en Uruguay](https://www.elpais.com.uy/informacion/policiales/agesic-proceso-incidentes-phishing-uruguay-ano-pasado.html)
 
-[Campo Laboral en seguridad infomartica](https://www.elobservador.com.uy/nota/uruguay-necesita-600-especialistas-en-ciberseguridad-2019118144214)
+[Campo Laboral en seguridad informatica](https://www.elobservador.com.uy/nota/uruguay-necesita-600-especialistas-en-ciberseguridad-2019118144214)
