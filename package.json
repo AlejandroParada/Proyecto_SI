@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-	"deploy": "push-dir --dir=dist --remote=gh-pages --branch=master"
+    "deploy": "npm run build && cd docs && cd .vuepress && git subtree push --prefix dist origin gh-pages",
+	"deploy1": "push-dir --dir=dist --remote=gh-pages --branch=master"
   },
   "author": "",
   "license": "ISC"
