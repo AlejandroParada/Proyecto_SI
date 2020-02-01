@@ -2,11 +2,14 @@
 module.exports = {
     dest: 'dist',
     base: '/Proyecto_SI/',
-    title: 'Preetish HS',
-    description: 'My awesome portfolio blog',
+    title: 'Proyecto de Seguridad Informatica',
+    description: 'Proyecto de fin de curso',
     themeConfig: {
         sidebar: [
-          '/ConsejosDeSeguridad'        
+          'ConsejosDeSeguridad',
+          'biometrias',
+          'ataqueshaker',
+          'DatosUruguay'
         ]
     }
   }
