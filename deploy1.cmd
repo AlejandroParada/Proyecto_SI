@@ -2,6 +2,7 @@ git add .
 git commit -m "deploy"
 git push
 
+git branch gh-pages
 git subtree split --prefix docs\.vuepress\dist -b gh-pages 
 rem create a local gh-pages branch containing the splitted output folder
 git push -f origin gh-pages:gh-pages 
