@@ -17,7 +17,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "npm run build && cd docs && cd .vuepress && git subtree push --prefix dist origin gh-pages",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages:gh-pages",
 	"deploy1": "push-dir --dir=dist --remote=gh-pages --branch=master"
   },
   "author": "",
